@@ -1,0 +1,36 @@
+package TCSS;
+import java.util.Scanner;
+class Tcs
+{
+	int emid;
+	int salary;
+	Tcs(int a,int b)
+	{
+		this.emid=a;
+		this.salary=b;
+	}
+	public void show()
+	{
+		System.out.println(emid+" "+salary);
+	}
+	
+}
+public class PractMarch {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter number of employye");
+		Tcs[]arr=new Tcs[s.nextInt()];
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println("enter emplyid,salary for employees"+" "+i);
+			int a=s.nextInt();
+			int b=s.nextInt();
+			arr[i]=new Tcs(a,b);
+		}
+		for(Tcs a:arr)
+		{
+			a.show();
+		}
+	}
+}

@@ -1,0 +1,26 @@
+package TCSS;
+import java.util.Scanner;
+interface Conveter
+{
+	int mtokm=100;
+	int kgtogm=100;
+	public void show();
+}
+class An implements Conveter
+{
+	int m=10;
+	int kg=10;
+	public void show()
+	{
+		System.out.println(m*mtokm);
+		System.out.println();
+		
+	}
+}
+	
+public class PractMarch {
+	public static void main(String[] args)  {
+		An obj=new An();
+		obj.show();
+		
+}}

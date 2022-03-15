@@ -1,0 +1,45 @@
+package TCSS;
+import java.util.Scanner;
+class Erorr extends RuntimeException
+{
+	Erorr()
+	{
+		super("no");
+	}
+	public String toString()
+	{
+		return "try again";
+		
+	}
+}
+class Age
+{
+	int a;
+   public void show()
+   {
+	   Scanner s=new Scanner(System.in);
+	   System.out.println("enter age");
+		int a=s.nextInt();
+		try {
+		if(a<18)
+		{
+			throw new Erorr();
+		}
+		else
+		{
+			System.out.println("ready");
+     }
+		}
+		catch(Erorr e)
+		{
+			System.out.println(e);
+		}
+   }
+   
+}
+	
+public class PractMarch {
+	public static void main(String[] args) {
+		Age obj=new Age();
+		obj.show();
+}}

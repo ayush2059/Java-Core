@@ -1,0 +1,60 @@
+package ayush;
+class Shape
+{
+	public  void area()
+	{
+		System.out.println("area of shape");
+	}
+}
+class Circle extends Shape
+{
+	int rad;
+	Circle(int a)
+	{
+		this.rad=a;
+	}
+	public void area()
+	{
+		System.out.println(3.14*rad*rad);
+	}
+}
+class Rectangle extends Shape
+{
+	int l;
+	int b;
+	Rectangle()
+	{
+		
+	}
+	Rectangle(int a,int b)
+	{
+		this.l=a;
+		this.b=b;
+	}
+	public void area()
+	{
+		System.out.println(l*b);
+	}
+	public void name()
+	{
+		System.out.println("ayushj");
+	}
+}
+public class Runtimepolu {
+
+	public static void main(String[] args) {
+	Shape s;
+	s=new Shape();
+	s.area();
+	s=new Circle(7);
+	s.area();
+	s=new Rectangle(2,3);
+	s.area();
+	Rectangle sd=new Rectangle();
+	sd.name();
+	
+	
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package TCSS;
+import java.util.Scanner;
+class Tcs
+{
+	int a;
+	int b;
+	
+	public void show()
+	{
+		System.out.println("ayush raj");
+	}
+}
+class Cts extends Tcs
+{
+	int c;
+	public void show()
+	{
+		System.out.println("adarsh raj");
+	}
+
+}
+public class PractMarch {
+	public static void main(String[] args) {
+		Cts obj=new Cts();
+		obj.show();
+				
+}}

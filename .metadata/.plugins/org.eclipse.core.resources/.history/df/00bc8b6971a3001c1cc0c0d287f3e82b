@@ -1,0 +1,37 @@
+package TCSS;
+import java.util.Scanner;
+class Erorr extends RuntimeException
+{
+	Erorr()
+	{
+		super("no");
+	}
+	public String toString()
+	{
+		return "try again";
+		
+	}
+	
+}
+public class PractMarch {
+	public static void main(String[] args) {
+		
+		boolean k=false;
+		while(k!=true)
+		try {
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter two mumber");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		System.out.println(a+b);
+		System.out.println(a/b);
+		k=true;
+		}
+		catch(Erorr e)
+		{
+			System.out.println(e);
+			System.out.println(e.getMessage());
+		}
+		
+}
+}

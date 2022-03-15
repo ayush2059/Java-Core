@@ -1,0 +1,25 @@
+package TCSS;
+import java.util.Scanner;
+class Tcs
+{
+	int a;
+	int b;
+	public void show(int a, int b)
+	{
+		this.a=a;
+		this.b=b;
+		System.out.println(a+b);
+	}
+	
+}
+public class PractMarch {
+	public static void main(String[] args) {
+		Tcs okl=new Tcs();
+		okl.show(50,30);
+		
+		
+
+		
+		
+		
+}}

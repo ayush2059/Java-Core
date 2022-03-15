@@ -1,0 +1,37 @@
+package TCSS;
+import java.util.Scanner;
+interface Conveter
+{
+	int mtokm=100;
+	int kgtogm=100;
+	public void show();
+}
+interface Con
+{
+	int mtol=90;
+}
+interface Whole extends Conveter,Con
+{
+	int atob =1000;
+}
+class An implements Whole
+{
+	int m=10;
+	int kg=10;
+	int a=5;
+	int n=78;
+	public void show()
+	{
+		System.out.println(m*mtokm);
+		System.out.println(kg*kgtogm);
+		System.out.println(a*atob);
+		System.out.println(n*atob);
+	}
+}
+	
+public class PractMarch {
+	public static void main(String[] args)  {
+		An obj=new An();
+		obj.show();
+		
+}}

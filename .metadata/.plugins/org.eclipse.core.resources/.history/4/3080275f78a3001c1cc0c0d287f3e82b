@@ -1,0 +1,11 @@
+package two;
+import one.*;
+public class B {
+
+	public static void main(String[] args) {
+	A objk=new A(20,30);
+	objk.show();
+
+	}
+
+}

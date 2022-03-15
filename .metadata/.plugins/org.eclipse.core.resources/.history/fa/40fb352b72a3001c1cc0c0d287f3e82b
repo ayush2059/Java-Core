@@ -1,0 +1,40 @@
+package TCSS;
+import java.util.Scanner;
+class Erorr extends Exception
+{
+	Erorr()
+	{
+		super("no");
+	}
+	public String toString()
+	{
+		return "try again";
+		
+	}
+}
+class Age
+{
+	int a;
+   public void show() throws Erorr
+   {
+	   Scanner s=new Scanner(System.in);
+	   System.out.println("enter age");
+		int a=s.nextInt();
+		if(a<18)
+		{
+			throw new Erorr();
+		}
+		else
+		{
+			System.out.println("ready");
+         }
+}
+		
+ }
+   
+	
+public class PractMarch {
+	public static void main(String[] args) throws Exception {
+		Age obj=new Age();
+		obj.show();
+}}

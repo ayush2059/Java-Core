@@ -1,0 +1,33 @@
+package TCSS;
+import java.util.Scanner;
+class Tcs
+{
+	static int a;
+	static int b=40;
+	
+	static
+	{
+		a=20;
+	}
+	public static void show()
+	{
+		System.out.println(a+b);
+	}
+	public void show1()
+	{
+		System.out.println(a+b);
+	}
+	
+}
+public class PractMarch {
+
+
+	public static void main(String[] args) {
+		Tcs obj=new Tcs();
+		Tcs.show();
+		obj.show1();
+
+		
+		
+		
+}}

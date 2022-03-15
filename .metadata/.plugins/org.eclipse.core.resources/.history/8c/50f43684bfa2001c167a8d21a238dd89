@@ -1,0 +1,44 @@
+package TCSS;
+import java.util.Scanner;
+class Tcs
+{
+	int a;
+	int b;
+	Tcs(int a,int b)
+	{
+		this.a=a;
+		this.b=b;
+	}
+	public void show()
+	{
+		System.out.println(a+b);
+	}
+}
+class Cts extends Tcs
+{
+	int c;
+	Cts(int a,int b,int c)
+	{
+		super(a,b);
+		this.c=c;
+	}
+	
+
+	public void show()
+	{
+		System.out.println(a+b+c);
+	}
+}
+public class PractMarch {
+	public static void main(String[] args) {
+		Cts obj=new Cts(10,20,30);
+		obj.show();
+		
+		
+		
+		
+
+		
+		
+		
+}}
